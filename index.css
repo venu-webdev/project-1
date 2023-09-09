@@ -229,47 +229,24 @@ input[type="button"] {
 @media screen and (max-width: 540px) {
 
   .left-main h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 450px) {
 
   .left-main h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  .btns{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  input[type="button"]{
-    width: 60vw;
-    padding: 8px;
-  }
-  .btn-dark, .btn-light{
-    margin: 0;
-  }
-}
-@media screen and (max-width: 360px) {
-
-  .left-main h1 {
-    font-size: 1.3rem;
-  }
-  .left-main p{
-    font-size: 0.7rem;
-  }
-  .btns{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .btn-dark, .btn-light{
-    margin: 0;
+  .left-main p {
+    font-size: 1rem;
   }
   input[type="button"]{
     width: 80vw;
     padding: 8px;
+    font-size: 1.3rem;
+  }
+  .btn-dark, .btn-light{
+    margin: 0;
   }
 }
+
