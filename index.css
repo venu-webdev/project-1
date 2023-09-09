@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --theme: #6d29ff;
+  --theme-hover: #430db9;
+  --btn-light: #e9deff;
+  --theme-light-hover: #855ef1;
+  --theme-light: #9571f5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.8em;
+  border: 1px solid var(--theme);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+nav h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  color: var(--theme);
+}
+
+nav h1 span {
+  font-weight: bold;
+}
+
+main {
+  height: 250px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.left-main {
+  width: 50%;
+  margin-left: 80px;
+}
+
+.left-main h1 {
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--theme);
+}
+
+.home-img {
+  width: 40vw;
+  margin-top: -60px;
+}
+
+.left-main p {
+  font-size: 20px;
+  color: var(--theme-light);
+}
+
+/* buttons */
+
+.btns {
+  margin-top: 20px;
+}
+input[type="button"] {
+  font-size: 1.1rem;
+  padding: 5px 25px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  margin-right: 10px;
+  background-color: var(--theme);
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: var(--theme-hover);
+}
+
+.btn-light {
+  margin-left: 10px;
+  background-color: var(--btn-light);
+  color: var(--theme);
+}
+
+.btn-light:hover {
+  background-color: var(--theme-hover);
+  color: #ffffff;
+}
+
+/* media-queries */
+@media screen and (max-width: 1730px) {
+  .left-main p {
+    margin-top: 15px;
+  }
+  .home-img{
+    margin-top: -60px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .left-main h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .left-main h1 {
+    font-size: 4rem;
+  }
+  .left-main{
+    margin-left: 50px;
+  }
+  .home-img {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .left-main h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  .left-main h1 {
+    font-size: 3.2rem;
+  }
+  .left-main p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .left-main h1 {
+    font-size: 2.8rem;
+  }
+  .left-main p {
+    font-size: 17px;
+  }
+  input[type="button"] {
+    padding: 4px 20px;
+    font-size: 1rem;
+  }
+  .btn-light{
+    margin-left: 5px;
+  }
+  .btn-right{
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .left-main h1 {
+    font-size: 2.4rem;
+  }
+  .left-main p {
+    font-size: 15px;
+  }
+  .btns{
+    margin-top: 10px;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .left-main h1 {
+    font-size: 2.1rem;
+  }
+  .left-main p {
+    font-size: 13px;
+  }
+  .btns{
+    margin-top: 10px;
+  }
+  input[type="button"] {
+    padding: 4px 18px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 540px) {
+
+  .left-main h1 {
+    font-size: 2.1rem;
+  }
+  .home-img{
+    margin-top: -60px;
+  }
+  .left-main p {
+    font-size: 13px;
+  }
+  .btns{
+    margin-top: 10px;
+  }
+  input[type="button"] {
+    padding: 4px 18px;
+    font-size: 0.9rem;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  .left-main{
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+    margin-left: 0px;
+  }
+  main{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 100px 0;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 540px) {
+
+  .left-main h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+
+  .left-main h1 {
+    font-size: 1.5rem;
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="button"]{
+    width: 60vw;
+    padding: 8px;
+  }
+  .btn-dark, .btn-light{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+
+  .left-main h1 {
+    font-size: 1.3rem;
+  }
+  .left-main p{
+    font-size: 0.7rem;
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-dark, .btn-light{
+    margin: 0;
+  }
+  input[type="button"]{
+    width: 80vw;
+    padding: 8px;
+  }
+}
